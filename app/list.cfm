@@ -60,6 +60,10 @@
 			<a href="#cgi.script_name#?scanPattern=#encodeForUrl( url.scanPattern )#&scanCursor=#encodeForUrl( results.cursor )#" target="list">Scan Next Page</a> &raquo;
 		</p>
 
+		<p class="reconfigure">
+			<a href="./configure.cfm" target="_top" class="reconfigure__link">Reconfigure Scanner</a>
+		</p>
+
 	</body>
 	</html>
 

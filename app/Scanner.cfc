@@ -76,6 +76,14 @@ component
 			}
 		);
 
+		// If the key doesn't exist, there's no point in trying to access the rest of
+		// key meta-data.
+		if ( results.type == "none" ) {
+
+			return( results );
+
+		}
+
 		results.ttl = formatTTL(
 			withRedis(
 				( redis ) => {

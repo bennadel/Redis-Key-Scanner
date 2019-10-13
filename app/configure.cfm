@@ -23,6 +23,19 @@
 			Configure Redis Scanner
 		</title>
 
+		<script type="text/javascript">
+
+			// Since we're dealing with old-school frameset, let's make sure that the
+			// Configure page never shows up in one of the frames. Redirect at the top-
+			// level if this page is framed.
+			if ( window.self !== window.top ) {
+
+				window.top.location = window.self.location;
+
+			}
+
+		</script>
+
 		<link rel="stylesheet" type="text/css" href="./styles.css" />
 	</head>
 	<body class="p-configure">
