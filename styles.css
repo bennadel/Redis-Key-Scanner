@@ -1,0 +1,110 @@
+
+body {
+	font-family: monospace ;
+	font-size: 18px ;
+	margin: 20px 20px 20px 20px ;
+}
+
+input,
+button {
+	font-family: inherit ;
+	font-size: inherit ;
+}
+
+.p-configure .form {
+	display: flex ;
+	flex-wrap: wrap ;
+}
+
+.p-configure .form__label {
+	display: block ;
+	flex: 1 0 100% ;
+	font-size: 22px ;
+	font-weight: bold ;
+	margin: 0px 0px 10px 0px ;
+}
+
+.p-configure .form__input {
+	padding: 5px 10px 5px 10px ;
+	width: 500px ;
+}
+
+.p-configure .form__button {
+	flex: 0 0 100px ;
+	margin: 0px 0px 0px 7px ;
+}
+
+.p-list .form {
+	display: flex ;
+	flex-wrap: wrap ;
+	margin: 0px 0px 30px 0px ;
+}
+
+.p-list .form__label {
+	flex: 1 0 100% ;
+	font-size: 24px ;
+	font-weight: bold ;
+	margin: 0px 0px 10px 0px ;
+}
+
+.p-list .form__input {
+	border: 1px solid #cccccc ;
+	border-radius: 3px 3px 3px 3px ;
+	flex: 1 1 auto ;
+	padding: 7px 10px 7px 10px ;
+}
+
+.p-list .form__button {
+	background-color: #dadada ;
+	border: 1px solid #cccccc ;
+	border-radius: 3px 3px 3px 3px ;
+	cursor: pointer ;
+	flex: 0 0 100px ;
+	margin-left: 7px ;
+}
+
+.p-list .pagination {
+	font-size: 22px ;
+}
+
+.p-list .keys {
+	line-height: 1.5em ;
+	white-space: nowrap ;
+}
+
+.p-list .keys__link:visited {
+	color: #999999 ;
+}
+
+.p-detail .datum {
+	margin: 0px 0px 20px 0px ;
+}
+
+.p-detail .datum__label {
+	font-size: 22px ;
+	font-weight: bold ;
+}
+
+.p-detail .datum__value {
+	margin: 10px 0px 0px 20px ;
+}
+
+.p-detail .datum__value .-lucee-dump {
+	margin-top: 13px ;
+}
+
+.p-detail .datum__value table {
+	border-radius: 2px 2px 2px 2px ;
+}
+
+.p-detail .datum__value td {
+	font-size: 16px ;
+	padding: 5px 9px 5px 9px ;
+}
+
+.p-detail .datum__warning {
+	background-color: #ffdd00 ;
+	border-radius: 4px 4px 4px 4px ;
+	display: inline-block ;
+	padding: 4px 13px 5px 13px ;
+}
