@@ -10,7 +10,7 @@ Partly as a learning experiment, partly because I have an actual need to inspect
 		><img
 			src="./README-screenshot.png?raw=true"
 			title="Screenshot of Redis Key Scanner running via CommandBox."
-			width="600"
+			style="width: 100% ;"
 	/></a>
 </p>
 
