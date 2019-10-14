@@ -4,7 +4,7 @@ component
 	{
 
 	// Configure the application runtime.
-	this.name = "RedisScanner";
+	this.name = "RedisKeyScanner";
 	this.applicationTimeout = createTimeSpan( 0, 8, 0, 0 );
 	this.sessionManagement = false;
 
@@ -46,7 +46,8 @@ component
 	*/
 	public void function onRequestStart() {
 
-		// Check to see if we are restarting the application (used during development).
+		// Check to see if we are restarting the application (this is used during
+		// development to reset the internal state of the application).
 		if ( url.keyExists( "init" ) ) {
 
 			applicationStop();

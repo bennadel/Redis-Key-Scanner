@@ -1,10 +1,10 @@
 component
 	output = false
-	hint = "I provide scan-based accessed to a Redis database."
+	hint = "I provide a simple API for iterating and viewing keys in a given Redis database."
 	{
 
 	/**
-	* I initialize the Scanner with the given Java Loader.
+	* I initialize the Scanner with the given JavaLoader.
 	* 
 	* @javaLoaderForJedis I am the JavaLoader for the Jedis library.
 	*/
@@ -56,6 +56,8 @@ component
 
 	/**
 	* I get the data and meta-data stored at the given key.
+	* 
+	* @key I am the Redis key being inspected.
 	*/
 	public struct function inspect( required string key ) {
 

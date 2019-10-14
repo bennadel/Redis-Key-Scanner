@@ -22,7 +22,7 @@
 		<form method="get" action="#cgi.script_name#" class="form">
 
 			<label for="key" class="form__label">Key:</label>
-			<input id="key" type="text" name="key" value="#encodeForHtml( url.key )#" class="form__input" />
+			<input id="key" type="text" name="key" value="#encodeForHtmlAttribute( url.key )#" class="form__input" />
 			<button type="submit" class="form__button">
 				View
 			</button>
@@ -55,6 +55,7 @@
 				</div>
 			</div>
 
+			<!--- If there is no TYPE, it's becaus no key was found in Redis. --->
 			<cfif ( results.type neq "none" )>
 
 				<div class="datum">

@@ -1,0 +1,724 @@
+FLUSHDB
+
+SETEX ben:demo:key1 10000 3.1415
+SET ben:demo:key2 'hello world'
+SET ben:demo:key3 'woot woot'
+
+SADD ben:demo:key4 cool awesome wicked thrilla nifty sweet
+EXPIRE ben:demo:key4 1234
+
+SADD ben:demo:key5 libby liz ellie elizabeth lizzy
+
+ZADD ben:demo:key6 1 bill 1 billy 27 william 39 willie 24 will
+EXPIRE ben:demo:key6 9998998
+
+RPUSH ben:demo:key7 aaa bbb ccc ddd eee fff ggg hhh
+EXPIRE ben:demo:key7 600
+
+HMSET ben:demo:key8 id 1 name ben role admin
+HMSET ben:demo:key9 id 2 name libby role manager
+EXPIRE ben:demo:key9 9998990
+
+SET rand:string:d6ccb1d7-94d5-43c3-b802c9752f883304:22 "random string value value"
+EXPIRE rand:string:d6ccb1d7-94d5-43c3-b802c9752f883304:22 154814
+HMSET rand:hash:826eb181-cf73-4f4c-aa5e8bf0a7342fe2:81 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:826eb181-cf73-4f4c-aa5e8bf0a7342fe2:81 261014
+SADD rand:set:c0b0397b-d9f1-4bdd-adcdef29766af8ed:38 foo bar baz bob boop
+EXPIRE rand:set:c0b0397b-d9f1-4bdd-adcdef29766af8ed:38 873609
+SET rand:string:3dec06b4-60dc-428a-bcc9d0dca98481cf:93 "random string value value"
+EXPIRE rand:string:3dec06b4-60dc-428a-bcc9d0dca98481cf:93 97780
+SADD rand:set:6aaa7d33-48ba-452b-82f6daa9a1a79df7:57 foo bar baz bob boop
+EXPIRE rand:set:6aaa7d33-48ba-452b-82f6daa9a1a79df7:57 790379
+SET rand:string:93394db1-665c-44f8-adca0f53d7bc33a1:89 "random string value value"
+EXPIRE rand:string:93394db1-665c-44f8-adca0f53d7bc33a1:89 398969
+RPUSH rand:list:0555e660-fe44-496c-baa81122acbe3d4f:88 what the heck is that
+HMSET rand:hash:7a1b445f-e336-41a6-88ed00ef08abd5a4:100 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:7a1b445f-e336-41a6-88ed00ef08abd5a4:100 264614
+SET rand:string:e922c7e8-c83c-421a-ac4a22813f9b5115:26 "random string value value"
+EXPIRE rand:string:e922c7e8-c83c-421a-ac4a22813f9b5115:26 167405
+HMSET rand:hash:794aa2a9-8d1e-43e0-881b2609e2091bc5:61 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:794aa2a9-8d1e-43e0-881b2609e2091bc5:61 669998
+RPUSH rand:list:0d66fa1a-bd97-473d-88985ff6727f50e2:91 what the heck is that
+SADD rand:set:002f361b-eff4-42bf-aef7537c8e6fc5e0:93 foo bar baz bob boop
+EXPIRE rand:set:002f361b-eff4-42bf-aef7537c8e6fc5e0:93 946694
+SET rand:string:52a7d786-6e8a-4ceb-8198b6f393f38a8e:48 "random string value value"
+EXPIRE rand:string:52a7d786-6e8a-4ceb-8198b6f393f38a8e:48 770026
+HMSET rand:hash:40867bda-b016-44fb-9e3e0b2b3d713908:22 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:40867bda-b016-44fb-9e3e0b2b3d713908:22 850992
+SET rand:string:dc4c0556-a5dc-4460-bfe18789e0603048:16 "random string value value"
+EXPIRE rand:string:dc4c0556-a5dc-4460-bfe18789e0603048:16 569296
+RPUSH rand:list:3141bfb6-2680-4c5e-b7834fd13e74fa7e:6 what the heck is that
+SADD rand:set:01dfc57d-f188-42fa-ba6927a3b867adfb:22 foo bar baz bob boop
+EXPIRE rand:set:01dfc57d-f188-42fa-ba6927a3b867adfb:22 711976
+ZADD rand:zset:2bbeb322-7ef3-407a-a65e0aba6118d10b:42 1 foo 2 bar 2 baz 2 bob 2 boop
+SADD rand:set:b9a0deef-373a-4d0d-a99c9c633cf17b7f:31 foo bar baz bob boop
+EXPIRE rand:set:b9a0deef-373a-4d0d-a99c9c633cf17b7f:31 197210
+SADD rand:set:2d2680ad-d799-40df-8a49befa76e215b5:50 foo bar baz bob boop
+EXPIRE rand:set:2d2680ad-d799-40df-8a49befa76e215b5:50 437329
+RPUSH rand:list:8abd0c73-6dc0-43b5-91127c8276636400:69 what the heck is that
+HMSET rand:hash:f436b776-ce97-449a-a8bb20d46d8b3e3a:10 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:f436b776-ce97-449a-a8bb20d46d8b3e3a:10 623020
+RPUSH rand:list:13089917-f57e-4100-927600e8d7838be9:45 what the heck is that
+HMSET rand:hash:86c2bf6e-53ca-4f91-8729e83a08dea8bc:65 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:86c2bf6e-53ca-4f91-8729e83a08dea8bc:65 63546
+RPUSH rand:list:c62d7323-831e-4a96-a359074558bbfc42:67 what the heck is that
+SET rand:string:e4ed6f29-1c10-4f4e-a6c14f2c0b6f0a36:27 "random string value value"
+EXPIRE rand:string:e4ed6f29-1c10-4f4e-a6c14f2c0b6f0a36:27 657313
+SET rand:string:9155883a-2bf6-45f7-a6dcb2767e6d9721:76 "random string value value"
+EXPIRE rand:string:9155883a-2bf6-45f7-a6dcb2767e6d9721:76 998116
+SET rand:string:4236a836-25dc-40f1-a37c7eeb10018e04:87 "random string value value"
+EXPIRE rand:string:4236a836-25dc-40f1-a37c7eeb10018e04:87 651601
+HMSET rand:hash:bc14bcf1-0bda-435a-a9166ed4d17a4ab5:95 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:bc14bcf1-0bda-435a-a9166ed4d17a4ab5:95 333995
+RPUSH rand:list:d0ab26ff-ffd6-4fa4-88c1acbca5d00163:39 what the heck is that
+SET rand:string:967b67d7-897d-441c-835a26f13ae6623d:44 "random string value value"
+EXPIRE rand:string:967b67d7-897d-441c-835a26f13ae6623d:44 836610
+SADD rand:set:64629523-24b5-4f25-873ee3e1173052c7:66 foo bar baz bob boop
+EXPIRE rand:set:64629523-24b5-4f25-873ee3e1173052c7:66 673697
+HMSET rand:hash:f60c8759-ca5f-47c1-b3d769ca80ebc805:92 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:f60c8759-ca5f-47c1-b3d769ca80ebc805:92 386420
+ZADD rand:zset:a4d8fe25-d4ef-4dbf-99cb69e71a94b627:78 1 foo 2 bar 2 baz 2 bob 2 boop
+RPUSH rand:list:3565bda7-07c9-4327-8b8931efeb568748:16 what the heck is that
+SADD rand:set:c9cc67d3-6d7b-425c-8624881d74256a25:86 foo bar baz bob boop
+EXPIRE rand:set:c9cc67d3-6d7b-425c-8624881d74256a25:86 302388
+SADD rand:set:ff54d801-ea32-4497-9126100f7ce63015:96 foo bar baz bob boop
+EXPIRE rand:set:ff54d801-ea32-4497-9126100f7ce63015:96 890026
+ZADD rand:zset:2977f9fe-fb4f-4162-bda3461566568545:58 1 foo 2 bar 2 baz 2 bob 2 boop
+ZADD rand:zset:ae5ca56a-1f65-4c31-88aeba288c9bff9a:22 1 foo 2 bar 2 baz 2 bob 2 boop
+HMSET rand:hash:a2bbb270-3d43-447a-988cf274c8dcccec:90 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:a2bbb270-3d43-447a-988cf274c8dcccec:90 136147
+RPUSH rand:list:bc4a8b4b-05c6-4bde-b426f13e734b7c12:15 what the heck is that
+ZADD rand:zset:b7522f45-470b-4129-bb549d81f11cfee8:5 1 foo 2 bar 2 baz 2 bob 2 boop
+SADD rand:set:ed8cdad7-570c-4e81-8f6ceb4c0fe9f2c0:28 foo bar baz bob boop
+EXPIRE rand:set:ed8cdad7-570c-4e81-8f6ceb4c0fe9f2c0:28 854701
+ZADD rand:zset:7e695e10-c677-4cfb-b86f575bf78bd5dc:68 1 foo 2 bar 2 baz 2 bob 2 boop
+RPUSH rand:list:db743e4a-3716-40a9-b16498bda30bad01:46 what the heck is that
+SET rand:string:4639b4be-5b67-4467-a2bcb2ac7373e383:78 "random string value value"
+EXPIRE rand:string:4639b4be-5b67-4467-a2bcb2ac7373e383:78 340305
+ZADD rand:zset:15f16c4b-bf34-4e94-88f8df81f300807c:11 1 foo 2 bar 2 baz 2 bob 2 boop
+ZADD rand:zset:49cd3663-31a5-4949-b5b0d1ef7ff63e2c:55 1 foo 2 bar 2 baz 2 bob 2 boop
+HMSET rand:hash:d4bac43f-95dd-44ba-bc762ee97c695a3d:37 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:d4bac43f-95dd-44ba-bc762ee97c695a3d:37 910842
+ZADD rand:zset:a5cf9c52-2798-4509-bde1b7e743a0ff8d:55 1 foo 2 bar 2 baz 2 bob 2 boop
+HMSET rand:hash:6098593d-be89-4328-9a90d9838cb94f60:90 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:6098593d-be89-4328-9a90d9838cb94f60:90 296759
+SET rand:string:559fe701-1714-4e2a-ad087c26df514e5e:99 "random string value value"
+EXPIRE rand:string:559fe701-1714-4e2a-ad087c26df514e5e:99 23492
+ZADD rand:zset:67b7845a-785d-4b63-bcaf396ed1afdda6:89 1 foo 2 bar 2 baz 2 bob 2 boop
+SADD rand:set:dc6cb4f9-78f5-4404-be7d3487f3bd03c8:53 foo bar baz bob boop
+EXPIRE rand:set:dc6cb4f9-78f5-4404-be7d3487f3bd03c8:53 673154
+RPUSH rand:list:c94d15b0-121f-475d-bb46140161a77845:5 what the heck is that
+RPUSH rand:list:93f21935-a23d-4a3b-b30d6fa42443f240:28 what the heck is that
+SET rand:string:e8d2a5e8-6321-4224-9489a0b385c15371:92 "random string value value"
+EXPIRE rand:string:e8d2a5e8-6321-4224-9489a0b385c15371:92 463808
+SET rand:string:32ef8acb-b809-45db-a3c3ab8dd394ddc6:51 "random string value value"
+EXPIRE rand:string:32ef8acb-b809-45db-a3c3ab8dd394ddc6:51 730722
+HMSET rand:hash:eb43fb90-85e0-4f3d-a601467cf78c05a8:46 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:eb43fb90-85e0-4f3d-a601467cf78c05a8:46 925981
+SADD rand:set:e1a61b48-2b01-455c-8550147e80cf0807:29 foo bar baz bob boop
+EXPIRE rand:set:e1a61b48-2b01-455c-8550147e80cf0807:29 481328
+RPUSH rand:list:af4b7525-1380-4334-96e863c34eba432d:39 what the heck is that
+SADD rand:set:14b32569-ad22-42d5-93435e620593a098:39 foo bar baz bob boop
+EXPIRE rand:set:14b32569-ad22-42d5-93435e620593a098:39 524789
+SADD rand:set:12d5af58-0b30-4757-8fff5765d5909927:36 foo bar baz bob boop
+EXPIRE rand:set:12d5af58-0b30-4757-8fff5765d5909927:36 186177
+ZADD rand:zset:4ea092d2-f5f8-4983-9acc6c383a47b010:83 1 foo 2 bar 2 baz 2 bob 2 boop
+SADD rand:set:000ce14c-3fd9-4f58-a90a182ed179629e:42 foo bar baz bob boop
+EXPIRE rand:set:000ce14c-3fd9-4f58-a90a182ed179629e:42 857161
+ZADD rand:zset:9e362351-821b-466d-9dd45d64d637e63d:18 1 foo 2 bar 2 baz 2 bob 2 boop
+SET rand:string:f733567d-70e4-4cb2-921c958eecf8d5a6:41 "random string value value"
+EXPIRE rand:string:f733567d-70e4-4cb2-921c958eecf8d5a6:41 829293
+SADD rand:set:48ded838-04f7-49d1-969529d862bbc3f5:72 foo bar baz bob boop
+EXPIRE rand:set:48ded838-04f7-49d1-969529d862bbc3f5:72 257625
+ZADD rand:zset:ada2ba9c-0106-4224-ad882f274ed7d7fc:89 1 foo 2 bar 2 baz 2 bob 2 boop
+ZADD rand:zset:0b424c97-b7c1-4417-900f0be1055972b8:86 1 foo 2 bar 2 baz 2 bob 2 boop
+HMSET rand:hash:1a9052d3-7cd9-4c37-b5d128b92a0b8fd5:0 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:1a9052d3-7cd9-4c37-b5d128b92a0b8fd5:0 867409
+SADD rand:set:b2d8e08e-43ef-4609-80c5256ea7f6a953:59 foo bar baz bob boop
+EXPIRE rand:set:b2d8e08e-43ef-4609-80c5256ea7f6a953:59 501509
+SADD rand:set:d33a4e56-fd0e-4ad8-a88a7827b09cb695:11 foo bar baz bob boop
+EXPIRE rand:set:d33a4e56-fd0e-4ad8-a88a7827b09cb695:11 673569
+RPUSH rand:list:91e74f2c-642f-4778-b5b3e6760d66fc28:87 what the heck is that
+SADD rand:set:cbba40e2-177b-49aa-8de95d87d52f5d4e:84 foo bar baz bob boop
+EXPIRE rand:set:cbba40e2-177b-49aa-8de95d87d52f5d4e:84 801619
+RPUSH rand:list:6b9b035b-7058-45d0-84ee9bbf8b445a45:16 what the heck is that
+HMSET rand:hash:1c7816a6-99e4-4b5d-8d52aea02445ee7f:92 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:1c7816a6-99e4-4b5d-8d52aea02445ee7f:92 466120
+SET rand:string:530c2b5d-5eaa-4b07-ae576ff66f67416e:4 "random string value value"
+EXPIRE rand:string:530c2b5d-5eaa-4b07-ae576ff66f67416e:4 755197
+SADD rand:set:1f8cf680-7405-4383-80a02cf4b3bdea35:20 foo bar baz bob boop
+EXPIRE rand:set:1f8cf680-7405-4383-80a02cf4b3bdea35:20 545753
+HMSET rand:hash:e74caebd-e501-4c29-a37c48ca7382f79a:5 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:e74caebd-e501-4c29-a37c48ca7382f79a:5 10557
+SADD rand:set:403005ba-8ef8-4cdf-8c6281ea0a97936c:1 foo bar baz bob boop
+EXPIRE rand:set:403005ba-8ef8-4cdf-8c6281ea0a97936c:1 30883
+HMSET rand:hash:2a2ef471-3ad3-4469-adf2c5833c127329:88 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:2a2ef471-3ad3-4469-adf2c5833c127329:88 467552
+HMSET rand:hash:e14d1985-e2fc-4691-81e567e384d68993:35 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:e14d1985-e2fc-4691-81e567e384d68993:35 806667
+RPUSH rand:list:342b8c03-e0c8-4296-8d1be4734fb4f60e:78 what the heck is that
+SADD rand:set:7f4d3c7a-bbb9-4c34-a1f565194a9ba6dc:12 foo bar baz bob boop
+EXPIRE rand:set:7f4d3c7a-bbb9-4c34-a1f565194a9ba6dc:12 686598
+RPUSH rand:list:2590cc67-c75d-43ae-a45f1d03e589bf89:87 what the heck is that
+SADD rand:set:e2e72678-e91c-44b7-b204377772906832:4 foo bar baz bob boop
+EXPIRE rand:set:e2e72678-e91c-44b7-b204377772906832:4 62951
+SET rand:string:d9c05194-0038-44ff-b1eff50f01007524:12 "random string value value"
+EXPIRE rand:string:d9c05194-0038-44ff-b1eff50f01007524:12 613268
+ZADD rand:zset:7ff83eac-c8ab-4a2d-a79e3fb07ef75233:3 1 foo 2 bar 2 baz 2 bob 2 boop
+SET rand:string:37e41bfa-7e6c-4721-899ccd16d84b8b95:95 "random string value value"
+EXPIRE rand:string:37e41bfa-7e6c-4721-899ccd16d84b8b95:95 149015
+SADD rand:set:afa7132e-03f2-435c-a371c60504d3ea8d:66 foo bar baz bob boop
+EXPIRE rand:set:afa7132e-03f2-435c-a371c60504d3ea8d:66 619338
+ZADD rand:zset:c79e18d0-e786-4a76-95839ce638e576cf:4 1 foo 2 bar 2 baz 2 bob 2 boop
+HMSET rand:hash:0524ae63-e92c-4a28-953418324a33f4d6:4 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:0524ae63-e92c-4a28-953418324a33f4d6:4 208469
+HMSET rand:hash:727c17e6-b05e-458a-bd3a62318bdeec3f:51 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:727c17e6-b05e-458a-bd3a62318bdeec3f:51 779111
+SET rand:string:48a38a23-34d0-4ba6-8877718e7e6fc748:94 "random string value value"
+EXPIRE rand:string:48a38a23-34d0-4ba6-8877718e7e6fc748:94 723557
+HMSET rand:hash:eb1f2edb-f836-4c87-91685cbd9224f5a5:10 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:eb1f2edb-f836-4c87-91685cbd9224f5a5:10 163752
+HMSET rand:hash:4158b502-969d-45b1-842b821df88bdf6a:44 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:4158b502-969d-45b1-842b821df88bdf6a:44 777778
+SADD rand:set:a00c9e1c-3f0a-4ff1-91e7a883f25e7a50:77 foo bar baz bob boop
+EXPIRE rand:set:a00c9e1c-3f0a-4ff1-91e7a883f25e7a50:77 651859
+ZADD rand:zset:8e3bd275-4025-4984-9115c989bf5f02fa:38 1 foo 2 bar 2 baz 2 bob 2 boop
+SADD rand:set:ee2fd42c-1066-4b01-975066352edd8878:14 foo bar baz bob boop
+EXPIRE rand:set:ee2fd42c-1066-4b01-975066352edd8878:14 62126
+HMSET rand:hash:6e21eef2-c1e7-471d-8cb0be3a107cea62:20 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:6e21eef2-c1e7-471d-8cb0be3a107cea62:20 513043
+SADD rand:set:c05ac601-785f-4b47-ae18c8459e4c62e3:70 foo bar baz bob boop
+EXPIRE rand:set:c05ac601-785f-4b47-ae18c8459e4c62e3:70 797809
+HMSET rand:hash:e4b7add6-5cf6-4813-89d5138ded1409bd:35 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:e4b7add6-5cf6-4813-89d5138ded1409bd:35 419308
+RPUSH rand:list:bc17a22c-f85f-46cb-8989e48b2aa2c8c1:29 what the heck is that
+HMSET rand:hash:24cd8905-fb47-4c0f-b5ea605dc65ba6cb:2 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:24cd8905-fb47-4c0f-b5ea605dc65ba6cb:2 103842
+RPUSH rand:list:55495459-89b6-4b79-9e524b096170e838:58 what the heck is that
+ZADD rand:zset:5852a360-0c5f-4e3c-b46140cca27cef99:77 1 foo 2 bar 2 baz 2 bob 2 boop
+RPUSH rand:list:a426ff73-76e1-475d-ba98977d8bb8cb2e:42 what the heck is that
+HMSET rand:hash:e1c2cdd9-3159-47ec-bf684f54566ca127:3 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:e1c2cdd9-3159-47ec-bf684f54566ca127:3 502967
+ZADD rand:zset:1608d19f-1b7d-4058-90b0154ab7d2a285:40 1 foo 2 bar 2 baz 2 bob 2 boop
+SADD rand:set:963f2ede-9a0a-4e0d-8758dda940e6374b:47 foo bar baz bob boop
+EXPIRE rand:set:963f2ede-9a0a-4e0d-8758dda940e6374b:47 316697
+SADD rand:set:d2c48616-a356-4334-b0a47b54c20a7d1f:17 foo bar baz bob boop
+EXPIRE rand:set:d2c48616-a356-4334-b0a47b54c20a7d1f:17 307334
+RPUSH rand:list:6f0ca8b6-6154-48ec-abd1742dca44e1d6:68 what the heck is that
+SET rand:string:84dc23bd-b13b-4847-9a2a5328739a94d3:67 "random string value value"
+EXPIRE rand:string:84dc23bd-b13b-4847-9a2a5328739a94d3:67 32706
+HMSET rand:hash:cfffdb66-9b79-42d2-aaf0959586be7aae:88 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:cfffdb66-9b79-42d2-aaf0959586be7aae:88 119890
+ZADD rand:zset:1c30468f-56db-4c49-89ac292b06cb5956:61 1 foo 2 bar 2 baz 2 bob 2 boop
+SET rand:string:e4aab772-b544-41c4-bd6ee8f95a202e9d:37 "random string value value"
+EXPIRE rand:string:e4aab772-b544-41c4-bd6ee8f95a202e9d:37 313692
+RPUSH rand:list:df4216bd-30df-44ba-84f745897bacfa5a:92 what the heck is that
+ZADD rand:zset:dd8d64ba-d7dd-43a7-9447f863fac135a8:40 1 foo 2 bar 2 baz 2 bob 2 boop
+RPUSH rand:list:755c90ed-16ed-49b4-b1869a62fb193db5:32 what the heck is that
+SET rand:string:ad14b30e-3e13-4db8-97ee24a88dde9f78:85 "random string value value"
+EXPIRE rand:string:ad14b30e-3e13-4db8-97ee24a88dde9f78:85 425759
+RPUSH rand:list:ddafee17-cf9f-4563-9eb240f9a5d285a3:81 what the heck is that
+HMSET rand:hash:16895532-2104-43b0-be293b2b0f37384c:78 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:16895532-2104-43b0-be293b2b0f37384c:78 617514
+SADD rand:set:d462bff5-a4ae-4b92-8d975bfca9a10cf8:10 foo bar baz bob boop
+EXPIRE rand:set:d462bff5-a4ae-4b92-8d975bfca9a10cf8:10 447104
+SADD rand:set:68fc437b-bc0c-4e71-9b5caecaf9aabf1a:3 foo bar baz bob boop
+EXPIRE rand:set:68fc437b-bc0c-4e71-9b5caecaf9aabf1a:3 869855
+RPUSH rand:list:afe4c0d5-6701-4320-9e88f1caecd82e4c:68 what the heck is that
+HMSET rand:hash:25c05faf-4a28-4d55-bf504d841fcf4456:83 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:25c05faf-4a28-4d55-bf504d841fcf4456:83 739214
+SADD rand:set:8e1a8243-788d-4f6b-a736b1312f3cc5bc:28 foo bar baz bob boop
+EXPIRE rand:set:8e1a8243-788d-4f6b-a736b1312f3cc5bc:28 909366
+RPUSH rand:list:a6076f4b-cd30-4e40-a0b5af22f27c81d1:29 what the heck is that
+HMSET rand:hash:d7062854-3d4e-4bba-8fdffc49d02433a0:97 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:d7062854-3d4e-4bba-8fdffc49d02433a0:97 337975
+HMSET rand:hash:ff2481a4-e421-4710-b22563688b642644:75 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:ff2481a4-e421-4710-b22563688b642644:75 633520
+ZADD rand:zset:d978acb8-4c7c-4ede-8c72c5703b7804d1:10 1 foo 2 bar 2 baz 2 bob 2 boop
+HMSET rand:hash:53ab4c5f-35d8-4fdd-a82a43ce697eb48b:30 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:53ab4c5f-35d8-4fdd-a82a43ce697eb48b:30 340422
+SADD rand:set:227cb07c-3ab3-43e1-9772fb673c8252ce:9 foo bar baz bob boop
+EXPIRE rand:set:227cb07c-3ab3-43e1-9772fb673c8252ce:9 62130
+SET rand:string:aa45a9bc-b2ac-4ca3-9fef4b6ea66b8d42:22 "random string value value"
+EXPIRE rand:string:aa45a9bc-b2ac-4ca3-9fef4b6ea66b8d42:22 999055
+RPUSH rand:list:9b2bb6f0-bed5-4ab3-97a8b2518dcd6f00:73 what the heck is that
+ZADD rand:zset:16bce44e-cac2-41a9-88c81acbc34b846c:35 1 foo 2 bar 2 baz 2 bob 2 boop
+ZADD rand:zset:31bf299f-9a1d-4e5d-9e53754d0f3b4c9b:31 1 foo 2 bar 2 baz 2 bob 2 boop
+SADD rand:set:f2897449-0a1f-4a64-aa885dca4989e281:12 foo bar baz bob boop
+EXPIRE rand:set:f2897449-0a1f-4a64-aa885dca4989e281:12 380632
+SADD rand:set:4cb0b938-2c2b-4b98-9eb244ccdefe4b26:42 foo bar baz bob boop
+EXPIRE rand:set:4cb0b938-2c2b-4b98-9eb244ccdefe4b26:42 972795
+SADD rand:set:56eaf508-7509-44f2-b8ef0430c31a6eaf:10 foo bar baz bob boop
+EXPIRE rand:set:56eaf508-7509-44f2-b8ef0430c31a6eaf:10 838775
+SET rand:string:6900db07-4ff4-431b-b6082849d53c2bc8:26 "random string value value"
+EXPIRE rand:string:6900db07-4ff4-431b-b6082849d53c2bc8:26 817807
+SADD rand:set:871fdd93-19ad-4f11-8eb00230a79e4ca1:80 foo bar baz bob boop
+EXPIRE rand:set:871fdd93-19ad-4f11-8eb00230a79e4ca1:80 491639
+SET rand:string:312bdce1-a614-4ed1-8b90e9435cc1637c:72 "random string value value"
+EXPIRE rand:string:312bdce1-a614-4ed1-8b90e9435cc1637c:72 255966
+ZADD rand:zset:4715ff84-6305-4f0b-a5bc975eabc11498:95 1 foo 2 bar 2 baz 2 bob 2 boop
+HMSET rand:hash:4dbb8e87-07fe-473f-8d1adfdebd0ef794:34 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:4dbb8e87-07fe-473f-8d1adfdebd0ef794:34 712954
+SADD rand:set:7d38d9ca-29e8-475c-b6896fd409ceaba0:43 foo bar baz bob boop
+EXPIRE rand:set:7d38d9ca-29e8-475c-b6896fd409ceaba0:43 817796
+ZADD rand:zset:6f522149-637c-44fd-9a42b69596a95392:24 1 foo 2 bar 2 baz 2 bob 2 boop
+HMSET rand:hash:60c648a1-4da8-40fe-861364171097389b:69 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:60c648a1-4da8-40fe-861364171097389b:69 906542
+ZADD rand:zset:3edf6c78-c1bf-4fe0-bc768005dbb804cd:88 1 foo 2 bar 2 baz 2 bob 2 boop
+ZADD rand:zset:5eb2cab6-5e87-4056-a7cd22aa95d797c8:17 1 foo 2 bar 2 baz 2 bob 2 boop
+SADD rand:set:944c6b07-57f9-4681-8c9e6f91356bbe7f:77 foo bar baz bob boop
+EXPIRE rand:set:944c6b07-57f9-4681-8c9e6f91356bbe7f:77 748427
+RPUSH rand:list:d30eadba-e937-42d9-9cd5f00121dd54d2:29 what the heck is that
+SET rand:string:0a53ea23-fd72-4183-99e8b3b7fddc8c1d:24 "random string value value"
+EXPIRE rand:string:0a53ea23-fd72-4183-99e8b3b7fddc8c1d:24 143844
+HMSET rand:hash:a0aba109-be94-49d8-a4a4aa2e85ea8f0a:11 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:a0aba109-be94-49d8-a4a4aa2e85ea8f0a:11 978181
+ZADD rand:zset:65fe459b-1607-4b5c-8bed3728cf9ffaf8:9 1 foo 2 bar 2 baz 2 bob 2 boop
+SADD rand:set:3eb43ce0-2e0e-40fe-b527a4bca71ec66e:100 foo bar baz bob boop
+EXPIRE rand:set:3eb43ce0-2e0e-40fe-b527a4bca71ec66e:100 918276
+RPUSH rand:list:50db6c41-c548-4828-94201aed635cffb4:12 what the heck is that
+SADD rand:set:b6be02aa-360f-43a7-a5a4537ff08ed4c8:61 foo bar baz bob boop
+EXPIRE rand:set:b6be02aa-360f-43a7-a5a4537ff08ed4c8:61 884306
+SADD rand:set:de38962f-0d75-4c30-91b8c99c12037f25:0 foo bar baz bob boop
+EXPIRE rand:set:de38962f-0d75-4c30-91b8c99c12037f25:0 743630
+HMSET rand:hash:3e56a99b-a47d-4952-80adc14261450b87:81 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:3e56a99b-a47d-4952-80adc14261450b87:81 296973
+HMSET rand:hash:12bb767d-03ee-45c7-b51256f4f739da5c:43 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:12bb767d-03ee-45c7-b51256f4f739da5c:43 915583
+HMSET rand:hash:d2a04340-b4d2-4257-83d1af0c5f1bc50f:30 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:d2a04340-b4d2-4257-83d1af0c5f1bc50f:30 760642
+HMSET rand:hash:f5144b60-17dd-4c74-8933a20eb925a740:16 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:f5144b60-17dd-4c74-8933a20eb925a740:16 180458
+SET rand:string:9b34d723-1526-4a45-800541529e67766f:5 "random string value value"
+EXPIRE rand:string:9b34d723-1526-4a45-800541529e67766f:5 43639
+RPUSH rand:list:5b59fd6e-a58c-43c6-8f268aa22de934be:47 what the heck is that
+SET rand:string:8384b731-87d9-4b7e-95813a84216feb52:21 "random string value value"
+EXPIRE rand:string:8384b731-87d9-4b7e-95813a84216feb52:21 456763
+HMSET rand:hash:180590e1-a39c-49d5-9df68d111c308b0a:64 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:180590e1-a39c-49d5-9df68d111c308b0a:64 710396
+ZADD rand:zset:f10c4c6f-f493-4426-ac129726f5f05b41:95 1 foo 2 bar 2 baz 2 bob 2 boop
+SADD rand:set:1fa2d3f1-1ae3-420b-9b1c60b42b72f557:36 foo bar baz bob boop
+EXPIRE rand:set:1fa2d3f1-1ae3-420b-9b1c60b42b72f557:36 789124
+SET rand:string:0554ebc7-34aa-498d-88535f6a7ee7713f:15 "random string value value"
+EXPIRE rand:string:0554ebc7-34aa-498d-88535f6a7ee7713f:15 651350
+HMSET rand:hash:ee844428-fbff-4b61-9a8f583fb23e7800:43 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:ee844428-fbff-4b61-9a8f583fb23e7800:43 464872
+SET rand:string:60a8b053-0bda-47a5-9c9836c271a60874:91 "random string value value"
+EXPIRE rand:string:60a8b053-0bda-47a5-9c9836c271a60874:91 773502
+RPUSH rand:list:bd48512f-bbcc-4589-ad90c4dc0dd9f20c:31 what the heck is that
+ZADD rand:zset:f543008f-bd14-4d7f-936498d026f63052:8 1 foo 2 bar 2 baz 2 bob 2 boop
+SADD rand:set:683735d5-9a3d-4a93-a1bff9983d6d6af4:34 foo bar baz bob boop
+EXPIRE rand:set:683735d5-9a3d-4a93-a1bff9983d6d6af4:34 627417
+SET rand:string:174e1c2d-ddac-47cd-8d70641de8b7a506:48 "random string value value"
+EXPIRE rand:string:174e1c2d-ddac-47cd-8d70641de8b7a506:48 901203
+SADD rand:set:54b40e5f-5356-4512-a4cfbf545a6f481e:99 foo bar baz bob boop
+EXPIRE rand:set:54b40e5f-5356-4512-a4cfbf545a6f481e:99 925066
+SET rand:string:3f2ceb8c-524f-401d-89f274ba4ece493e:19 "random string value value"
+EXPIRE rand:string:3f2ceb8c-524f-401d-89f274ba4ece493e:19 480361
+SADD rand:set:7930824c-dd5c-4dcc-9ec87189970a9356:98 foo bar baz bob boop
+EXPIRE rand:set:7930824c-dd5c-4dcc-9ec87189970a9356:98 763826
+ZADD rand:zset:faa75c77-8812-4a09-b1fc9a79e4324a54:25 1 foo 2 bar 2 baz 2 bob 2 boop
+RPUSH rand:list:02707350-e76f-4736-861527243e8bfd80:8 what the heck is that
+HMSET rand:hash:91214a2b-459d-4431-a8232a3a0d4dea5f:48 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:91214a2b-459d-4431-a8232a3a0d4dea5f:48 997673
+RPUSH rand:list:90b07a8a-12cb-42db-ab2141591424c18f:34 what the heck is that
+ZADD rand:zset:f5b69163-b836-4db5-8b3dd0767f85630d:67 1 foo 2 bar 2 baz 2 bob 2 boop
+ZADD rand:zset:dce6a21b-7eff-4532-babc86b39828fba3:12 1 foo 2 bar 2 baz 2 bob 2 boop
+SADD rand:set:f7fff460-fcbb-4547-812b54d3d4a483b5:7 foo bar baz bob boop
+EXPIRE rand:set:f7fff460-fcbb-4547-812b54d3d4a483b5:7 770810
+SET rand:string:71d55d48-6960-4cd0-88ba185d7af70fd4:92 "random string value value"
+EXPIRE rand:string:71d55d48-6960-4cd0-88ba185d7af70fd4:92 812811
+RPUSH rand:list:4ab8d811-3c46-4850-873449514f513c8c:19 what the heck is that
+SET rand:string:68905a8e-440c-4472-8298ff4ad60a7657:5 "random string value value"
+EXPIRE rand:string:68905a8e-440c-4472-8298ff4ad60a7657:5 842915
+RPUSH rand:list:84069855-d1ff-4c42-a083d5c528a29ba3:52 what the heck is that
+HMSET rand:hash:eeb54e11-5fe2-452a-9631f6d5c6364515:84 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:eeb54e11-5fe2-452a-9631f6d5c6364515:84 927051
+SET rand:string:ebc0499b-3566-4f7a-88ad5205b589ef8a:71 "random string value value"
+EXPIRE rand:string:ebc0499b-3566-4f7a-88ad5205b589ef8a:71 242938
+SADD rand:set:629faaf3-9eb3-416c-9fa7c03eb3b594df:82 foo bar baz bob boop
+EXPIRE rand:set:629faaf3-9eb3-416c-9fa7c03eb3b594df:82 361658
+SET rand:string:251ea42e-e728-449e-b9974bf863b8faa8:66 "random string value value"
+EXPIRE rand:string:251ea42e-e728-449e-b9974bf863b8faa8:66 557683
+HMSET rand:hash:1b121765-4c78-402b-a682f44d9067d9b3:65 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:1b121765-4c78-402b-a682f44d9067d9b3:65 84953
+HMSET rand:hash:18072da9-18d1-42a5-bcb2b0fde4f583db:41 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:18072da9-18d1-42a5-bcb2b0fde4f583db:41 737254
+ZADD rand:zset:7184ae57-175b-4b41-9c4c03775a85f86a:17 1 foo 2 bar 2 baz 2 bob 2 boop
+RPUSH rand:list:27f8872e-2c98-43e0-86ccaae07a964c79:90 what the heck is that
+ZADD rand:zset:872bc94f-9715-48e0-9220e4436013b6ee:58 1 foo 2 bar 2 baz 2 bob 2 boop
+SADD rand:set:c46d5bc1-23cf-4486-917ce880143fea7e:32 foo bar baz bob boop
+EXPIRE rand:set:c46d5bc1-23cf-4486-917ce880143fea7e:32 73732
+ZADD rand:zset:6cb96637-12e7-42ab-a734922b4cb52053:62 1 foo 2 bar 2 baz 2 bob 2 boop
+HMSET rand:hash:de66d20d-2b1c-4ccf-a583c918fbaf68af:13 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:de66d20d-2b1c-4ccf-a583c918fbaf68af:13 704896
+ZADD rand:zset:aebd0dd0-41f6-4c66-ba35d091a7801736:89 1 foo 2 bar 2 baz 2 bob 2 boop
+SADD rand:set:908df138-ed55-4295-97826443b7900efa:37 foo bar baz bob boop
+EXPIRE rand:set:908df138-ed55-4295-97826443b7900efa:37 995135
+HMSET rand:hash:36b5c303-612c-46e3-8f38234d7da138c9:50 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:36b5c303-612c-46e3-8f38234d7da138c9:50 219244
+SADD rand:set:11762fa4-eaff-4460-80138f5cf66efefd:11 foo bar baz bob boop
+EXPIRE rand:set:11762fa4-eaff-4460-80138f5cf66efefd:11 66502
+HMSET rand:hash:60a04216-c2aa-4b7f-a7376356fca8305a:80 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:60a04216-c2aa-4b7f-a7376356fca8305a:80 449427
+ZADD rand:zset:33428b97-fedd-4d84-9452452bd7c7969b:38 1 foo 2 bar 2 baz 2 bob 2 boop
+SET rand:string:050eef74-59dd-48b7-9980b5a21c7a323e:60 "random string value value"
+EXPIRE rand:string:050eef74-59dd-48b7-9980b5a21c7a323e:60 773863
+SET rand:string:5cd32ab8-0e46-4f6a-a3a6eb1037c608e1:30 "random string value value"
+EXPIRE rand:string:5cd32ab8-0e46-4f6a-a3a6eb1037c608e1:30 4674
+SET rand:string:61e90b64-962c-43af-ad5314d154ff1a74:4 "random string value value"
+EXPIRE rand:string:61e90b64-962c-43af-ad5314d154ff1a74:4 365380
+HMSET rand:hash:56113dc9-2fd2-4eaa-89a1905c6b0b9245:77 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:56113dc9-2fd2-4eaa-89a1905c6b0b9245:77 379053
+RPUSH rand:list:5776823f-b000-4b91-80318db54e4e5946:60 what the heck is that
+HMSET rand:hash:f90be59f-dc85-42ad-a085f5a19edf47f2:52 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:f90be59f-dc85-42ad-a085f5a19edf47f2:52 560505
+SET rand:string:f679e9dd-3090-46ff-b3222e9319c17abf:17 "random string value value"
+EXPIRE rand:string:f679e9dd-3090-46ff-b3222e9319c17abf:17 559632
+SET rand:string:61af7a4e-e209-4682-92a5791479bccd62:93 "random string value value"
+EXPIRE rand:string:61af7a4e-e209-4682-92a5791479bccd62:93 251051
+HMSET rand:hash:3aacc2d6-2361-42ad-b2ac6358dba78e07:19 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:3aacc2d6-2361-42ad-b2ac6358dba78e07:19 167828
+HMSET rand:hash:56bfb2ad-117c-4076-b701830bcac3048f:12 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:56bfb2ad-117c-4076-b701830bcac3048f:12 842394
+ZADD rand:zset:517fadf5-9c0c-42e0-a052a3c56600b642:39 1 foo 2 bar 2 baz 2 bob 2 boop
+ZADD rand:zset:9f916f92-aea2-4708-9e77b5dfae103ec4:94 1 foo 2 bar 2 baz 2 bob 2 boop
+HMSET rand:hash:d3365474-a6ab-4667-9fbb712d16e514ef:54 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:d3365474-a6ab-4667-9fbb712d16e514ef:54 932084
+SADD rand:set:accc10dc-97ef-4d62-8ab889a4ab346ba1:6 foo bar baz bob boop
+EXPIRE rand:set:accc10dc-97ef-4d62-8ab889a4ab346ba1:6 418816
+SADD rand:set:4529d3d8-6315-4878-a3eebc51c6962e00:32 foo bar baz bob boop
+EXPIRE rand:set:4529d3d8-6315-4878-a3eebc51c6962e00:32 186443
+ZADD rand:zset:84f03612-1391-45bd-acb0dae369458c15:49 1 foo 2 bar 2 baz 2 bob 2 boop
+SADD rand:set:29b49e58-27a1-45bb-bf196d7a2c3981bf:10 foo bar baz bob boop
+EXPIRE rand:set:29b49e58-27a1-45bb-bf196d7a2c3981bf:10 260926
+RPUSH rand:list:18492e74-81a6-4c29-a9ee56f778ca2479:65 what the heck is that
+RPUSH rand:list:63eb3ada-e23f-41dd-97498494d6d024ad:10 what the heck is that
+SET rand:string:719d8edf-a264-4308-b3717534d962667c:60 "random string value value"
+EXPIRE rand:string:719d8edf-a264-4308-b3717534d962667c:60 574135
+HMSET rand:hash:321059e3-3b4a-4c5d-86665adddd581adc:12 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:321059e3-3b4a-4c5d-86665adddd581adc:12 437369
+SET rand:string:6f25ef8b-9ef6-44da-9d691cd21e537c38:70 "random string value value"
+EXPIRE rand:string:6f25ef8b-9ef6-44da-9d691cd21e537c38:70 995478
+HMSET rand:hash:9bfbba25-7e46-46e0-b745b1208d915324:21 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:9bfbba25-7e46-46e0-b745b1208d915324:21 651208
+ZADD rand:zset:08ba70f0-15d5-4d0e-9a47d6a9f950a54f:84 1 foo 2 bar 2 baz 2 bob 2 boop
+SET rand:string:0fefc9ae-93fe-444f-a1b6a14602b6cc98:66 "random string value value"
+EXPIRE rand:string:0fefc9ae-93fe-444f-a1b6a14602b6cc98:66 678027
+SET rand:string:f7cd3733-8deb-44e6-bc383891e3134ccf:90 "random string value value"
+EXPIRE rand:string:f7cd3733-8deb-44e6-bc383891e3134ccf:90 204050
+HMSET rand:hash:c048a773-b3ee-4c82-82fa5bf649ff5516:72 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:c048a773-b3ee-4c82-82fa5bf649ff5516:72 222140
+SADD rand:set:36f5e85b-3b2c-4eac-b71b8d9509f41a66:8 foo bar baz bob boop
+EXPIRE rand:set:36f5e85b-3b2c-4eac-b71b8d9509f41a66:8 762207
+ZADD rand:zset:20dfa428-bc39-422b-a2b88d115e59ac18:83 1 foo 2 bar 2 baz 2 bob 2 boop
+HMSET rand:hash:83bfc957-a620-4534-bafecc824b1c3296:39 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:83bfc957-a620-4534-bafecc824b1c3296:39 57579
+SADD rand:set:7c004a69-3718-4c5e-b355c9a987cf2783:29 foo bar baz bob boop
+EXPIRE rand:set:7c004a69-3718-4c5e-b355c9a987cf2783:29 317681
+SADD rand:set:fc8f2113-adce-4bdb-890080a79d36023b:89 foo bar baz bob boop
+EXPIRE rand:set:fc8f2113-adce-4bdb-890080a79d36023b:89 370834
+ZADD rand:zset:70ad09c2-8f42-4776-b89cb4de2ff78bff:94 1 foo 2 bar 2 baz 2 bob 2 boop
+RPUSH rand:list:b23a7ea6-6c27-464c-bfc253cde92854a1:96 what the heck is that
+SADD rand:set:f67bc48a-b133-46d1-af2d423b273e2d25:44 foo bar baz bob boop
+EXPIRE rand:set:f67bc48a-b133-46d1-af2d423b273e2d25:44 252001
+SADD rand:set:d111cbe6-7962-4006-87f3c7664a91f299:41 foo bar baz bob boop
+EXPIRE rand:set:d111cbe6-7962-4006-87f3c7664a91f299:41 385741
+SET rand:string:4a1ebc02-ac3a-449e-aadde1e6cc2610ae:55 "random string value value"
+EXPIRE rand:string:4a1ebc02-ac3a-449e-aadde1e6cc2610ae:55 695696
+HMSET rand:hash:3c0e0fa9-7850-499d-8d8a08a07d05ba05:90 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:3c0e0fa9-7850-499d-8d8a08a07d05ba05:90 47166
+SET rand:string:a4c29316-3f23-4467-b43fb2dcf8384a2f:45 "random string value value"
+EXPIRE rand:string:a4c29316-3f23-4467-b43fb2dcf8384a2f:45 543813
+RPUSH rand:list:af08e51f-d79d-47d4-83f5cbaa87019fb1:1 what the heck is that
+ZADD rand:zset:e674fd2a-d306-4308-a423705e2cdb6327:10 1 foo 2 bar 2 baz 2 bob 2 boop
+RPUSH rand:list:c7f6bd76-361c-44d3-a397cf83a89ecf32:77 what the heck is that
+SADD rand:set:3ada8204-7cf0-44f8-85d33c428339e680:36 foo bar baz bob boop
+EXPIRE rand:set:3ada8204-7cf0-44f8-85d33c428339e680:36 482377
+HMSET rand:hash:31069d9f-99fe-4b06-b087f8dd4d913094:19 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:31069d9f-99fe-4b06-b087f8dd4d913094:19 283029
+HMSET rand:hash:22957ed2-6e2d-4b14-8c2dd7f040deeb5c:92 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:22957ed2-6e2d-4b14-8c2dd7f040deeb5c:92 772359
+RPUSH rand:list:a5a684c1-c7d2-461b-844ee48c6960023c:96 what the heck is that
+SADD rand:set:7479b9fa-df8d-46b0-bbc631b8742c34e6:77 foo bar baz bob boop
+EXPIRE rand:set:7479b9fa-df8d-46b0-bbc631b8742c34e6:77 506084
+SET rand:string:5349f97a-dcba-43ae-8f5f7c50c0aedbef:13 "random string value value"
+EXPIRE rand:string:5349f97a-dcba-43ae-8f5f7c50c0aedbef:13 148910
+HMSET rand:hash:f939fba4-4b94-414a-80b80b706093f068:67 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:f939fba4-4b94-414a-80b80b706093f068:67 264925
+SADD rand:set:7d647727-cf35-4d7a-aaae5733c758ccac:10 foo bar baz bob boop
+EXPIRE rand:set:7d647727-cf35-4d7a-aaae5733c758ccac:10 539867
+ZADD rand:zset:7fbb4a4d-e083-40d2-8dad65248eb1ff65:88 1 foo 2 bar 2 baz 2 bob 2 boop
+ZADD rand:zset:1d5a00f4-467c-44f8-8efca1a08da50dc3:27 1 foo 2 bar 2 baz 2 bob 2 boop
+SET rand:string:d71accaa-361a-4e16-b9dfda8c21a95710:75 "random string value value"
+EXPIRE rand:string:d71accaa-361a-4e16-b9dfda8c21a95710:75 48240
+HMSET rand:hash:6a7f1924-5d0b-4999-b3f35c628148c591:16 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:6a7f1924-5d0b-4999-b3f35c628148c591:16 260642
+RPUSH rand:list:4f59ce28-ada2-4736-92b094efd5d9baf9:85 what the heck is that
+RPUSH rand:list:089b06da-75aa-49d7-bd0f884045fc13d9:85 what the heck is that
+RPUSH rand:list:ae7d0a87-f2df-48d7-a9e2f7409f48f073:13 what the heck is that
+SADD rand:set:da6dbf40-b9cd-4163-a310347afc03f3d1:49 foo bar baz bob boop
+EXPIRE rand:set:da6dbf40-b9cd-4163-a310347afc03f3d1:49 190772
+HMSET rand:hash:8540dd92-fe88-47ec-bf450e05dbda3ecb:81 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:8540dd92-fe88-47ec-bf450e05dbda3ecb:81 146048
+RPUSH rand:list:9d95ac03-8886-4db4-be550b0c9af02a1f:72 what the heck is that
+SET rand:string:7461a155-a392-49b6-921702388ea161b2:21 "random string value value"
+EXPIRE rand:string:7461a155-a392-49b6-921702388ea161b2:21 427946
+HMSET rand:hash:89c19b21-76a8-41bc-a1e75fdca22a63aa:12 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:89c19b21-76a8-41bc-a1e75fdca22a63aa:12 187290
+HMSET rand:hash:5f96a4fc-93d4-4799-a5f3c0624844cf56:70 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:5f96a4fc-93d4-4799-a5f3c0624844cf56:70 861760
+RPUSH rand:list:f4bea618-7a22-4963-81971e659b00d57d:68 what the heck is that
+RPUSH rand:list:c2fa7cc5-25c1-47a9-9ae13ac6eda0c651:9 what the heck is that
+SADD rand:set:3b988bb5-168e-4c92-b3471878f4d2c081:70 foo bar baz bob boop
+EXPIRE rand:set:3b988bb5-168e-4c92-b3471878f4d2c081:70 610504
+HMSET rand:hash:3f259825-a866-4690-93d22ca78a12f9db:49 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:3f259825-a866-4690-93d22ca78a12f9db:49 628456
+ZADD rand:zset:a9a77b56-8444-42d5-87ca79a29deb6ff7:63 1 foo 2 bar 2 baz 2 bob 2 boop
+SET rand:string:f4ec0f8a-b3d1-4cf4-a3d047df263c4e40:85 "random string value value"
+EXPIRE rand:string:f4ec0f8a-b3d1-4cf4-a3d047df263c4e40:85 365825
+SET rand:string:431485db-d513-4939-805de8b577f48e6b:32 "random string value value"
+EXPIRE rand:string:431485db-d513-4939-805de8b577f48e6b:32 301910
+ZADD rand:zset:268f8ba0-f061-426e-a87f1c60bd3edb53:16 1 foo 2 bar 2 baz 2 bob 2 boop
+SADD rand:set:6e838028-7c61-4d6e-9450012d10acae70:93 foo bar baz bob boop
+EXPIRE rand:set:6e838028-7c61-4d6e-9450012d10acae70:93 990797
+SET rand:string:35de7ad0-099f-471c-b123eb767b9589a3:78 "random string value value"
+EXPIRE rand:string:35de7ad0-099f-471c-b123eb767b9589a3:78 832121
+RPUSH rand:list:85c5c910-f92d-459e-9b1d76284c747639:10 what the heck is that
+SET rand:string:f15ee53b-c5fb-45f2-94539fb55d49124b:64 "random string value value"
+EXPIRE rand:string:f15ee53b-c5fb-45f2-94539fb55d49124b:64 312148
+HMSET rand:hash:2041fdb0-711f-46f3-8b13f1ec68e09b7d:53 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:2041fdb0-711f-46f3-8b13f1ec68e09b7d:53 430410
+HMSET rand:hash:cd9d8a8f-2900-468f-ab67564158de0612:39 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:cd9d8a8f-2900-468f-ab67564158de0612:39 273702
+SET rand:string:594b46ba-08fe-4961-bea5995b7df59ced:33 "random string value value"
+EXPIRE rand:string:594b46ba-08fe-4961-bea5995b7df59ced:33 918868
+SADD rand:set:ec303e73-42fe-48e6-9515e08ea24e42bc:80 foo bar baz bob boop
+EXPIRE rand:set:ec303e73-42fe-48e6-9515e08ea24e42bc:80 626774
+HMSET rand:hash:a64f4766-c85d-4298-a3a777f58e20beca:59 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:a64f4766-c85d-4298-a3a777f58e20beca:59 558231
+SET rand:string:f71e38f2-7276-429b-9dba6e340696f2e2:60 "random string value value"
+EXPIRE rand:string:f71e38f2-7276-429b-9dba6e340696f2e2:60 815108
+SADD rand:set:c1f75912-8e84-4ac6-ad91f68c8206d53b:45 foo bar baz bob boop
+EXPIRE rand:set:c1f75912-8e84-4ac6-ad91f68c8206d53b:45 857062
+SET rand:string:0a34cb00-7bc2-4492-beaee224f901aff2:94 "random string value value"
+EXPIRE rand:string:0a34cb00-7bc2-4492-beaee224f901aff2:94 894389
+SET rand:string:ba9abce1-da5b-4f90-9b44d026a05aebf9:69 "random string value value"
+EXPIRE rand:string:ba9abce1-da5b-4f90-9b44d026a05aebf9:69 27315
+ZADD rand:zset:34376bbf-0a69-474a-b76cb10927c86013:65 1 foo 2 bar 2 baz 2 bob 2 boop
+ZADD rand:zset:8ad30058-c531-4b89-818bedac562c3990:29 1 foo 2 bar 2 baz 2 bob 2 boop
+ZADD rand:zset:f9504b3f-1ea3-440a-9cc9e3620d7aabe1:76 1 foo 2 bar 2 baz 2 bob 2 boop
+SET rand:string:b81d5bac-80d6-4e4a-bdb85e1bf5e83503:81 "random string value value"
+EXPIRE rand:string:b81d5bac-80d6-4e4a-bdb85e1bf5e83503:81 970630
+ZADD rand:zset:8f905d72-80a7-4632-b04dab59b38afaba:67 1 foo 2 bar 2 baz 2 bob 2 boop
+SET rand:string:c0999be2-fd2e-4a03-bf91ac693738238f:73 "random string value value"
+EXPIRE rand:string:c0999be2-fd2e-4a03-bf91ac693738238f:73 629811
+SADD rand:set:b0ee364b-bd4f-4145-9cb3efbbec945b92:93 foo bar baz bob boop
+EXPIRE rand:set:b0ee364b-bd4f-4145-9cb3efbbec945b92:93 389951
+SADD rand:set:d841a696-659f-4c77-97158239ed4388f4:12 foo bar baz bob boop
+EXPIRE rand:set:d841a696-659f-4c77-97158239ed4388f4:12 619056
+RPUSH rand:list:639714cf-3d5f-4dc7-a4cb4e790a3d2640:10 what the heck is that
+SET rand:string:a8d33148-79a0-4b92-8ecca92cbf6c392e:66 "random string value value"
+EXPIRE rand:string:a8d33148-79a0-4b92-8ecca92cbf6c392e:66 908312
+SET rand:string:353c6ace-d865-4c91-b4c30397aec46045:37 "random string value value"
+EXPIRE rand:string:353c6ace-d865-4c91-b4c30397aec46045:37 913984
+SET rand:string:91bb7ec1-7bc9-474c-af07fee67faad10e:92 "random string value value"
+EXPIRE rand:string:91bb7ec1-7bc9-474c-af07fee67faad10e:92 929425
+ZADD rand:zset:5036a760-50fa-4196-80b8732838d5470a:3 1 foo 2 bar 2 baz 2 bob 2 boop
+ZADD rand:zset:95c66312-fbe8-4907-beb3786cec8142b1:99 1 foo 2 bar 2 baz 2 bob 2 boop
+ZADD rand:zset:13facfe2-1f46-45e2-9e722b2d867b900b:71 1 foo 2 bar 2 baz 2 bob 2 boop
+HMSET rand:hash:bc219086-436b-4b92-a3bf1803b0817f57:23 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:bc219086-436b-4b92-a3bf1803b0817f57:23 821559
+HMSET rand:hash:5332061c-0620-49d2-b5ca54765b395137:2 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:5332061c-0620-49d2-b5ca54765b395137:2 745430
+RPUSH rand:list:b2db7355-dd2e-4df7-b45f22d77326b1f8:42 what the heck is that
+SET rand:string:755f860e-bebd-42d0-98aaa5f533199320:76 "random string value value"
+EXPIRE rand:string:755f860e-bebd-42d0-98aaa5f533199320:76 373579
+RPUSH rand:list:72f2fc1b-ee8c-4e2a-b881c2176ef6fc2d:9 what the heck is that
+HMSET rand:hash:a278b46f-5b8e-4fd7-8b7a0a43ebb716a7:79 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:a278b46f-5b8e-4fd7-8b7a0a43ebb716a7:79 79405
+SADD rand:set:40208280-649e-4d72-83b7e144e64076bc:12 foo bar baz bob boop
+EXPIRE rand:set:40208280-649e-4d72-83b7e144e64076bc:12 299313
+HMSET rand:hash:9d765efe-0269-4411-94f4fdabc74d9a54:45 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:9d765efe-0269-4411-94f4fdabc74d9a54:45 36846
+SET rand:string:4287fd37-66d3-429c-ab908e9ca90288d2:50 "random string value value"
+EXPIRE rand:string:4287fd37-66d3-429c-ab908e9ca90288d2:50 85749
+ZADD rand:zset:9bb73e4c-f096-4f39-932d8a15694a792b:23 1 foo 2 bar 2 baz 2 bob 2 boop
+ZADD rand:zset:2cdceccb-bef8-44b4-b82c33d005303809:5 1 foo 2 bar 2 baz 2 bob 2 boop
+SADD rand:set:09723fe0-eb4f-4a33-8093de2b68663b27:20 foo bar baz bob boop
+EXPIRE rand:set:09723fe0-eb4f-4a33-8093de2b68663b27:20 394215
+HMSET rand:hash:b4ca1f86-ca75-4ba9-bf392c6afa162ecc:33 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:b4ca1f86-ca75-4ba9-bf392c6afa162ecc:33 652210
+HMSET rand:hash:a12ca0f6-e4f7-416d-b5b131b664a1fca6:5 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:a12ca0f6-e4f7-416d-b5b131b664a1fca6:5 468495
+RPUSH rand:list:eaebe7d1-234a-436d-8056db20fda8a2c4:43 what the heck is that
+SET rand:string:438ce98a-9179-45ea-97bf23547f9f9939:74 "random string value value"
+EXPIRE rand:string:438ce98a-9179-45ea-97bf23547f9f9939:74 644319
+ZADD rand:zset:f0bf6f47-27da-488a-9d4536ba6588aaf0:14 1 foo 2 bar 2 baz 2 bob 2 boop
+SET rand:string:de81ceb5-170a-4b24-b0bdbd060a5d6f48:68 "random string value value"
+EXPIRE rand:string:de81ceb5-170a-4b24-b0bdbd060a5d6f48:68 564643
+RPUSH rand:list:c9fc216b-8aa1-4192-8c83368e8c2e5a5a:73 what the heck is that
+SADD rand:set:82558e9d-3453-4d0b-970d2560ea26e9cf:99 foo bar baz bob boop
+EXPIRE rand:set:82558e9d-3453-4d0b-970d2560ea26e9cf:99 841957
+HMSET rand:hash:19bf1395-2234-4a29-b49334f8e48de83a:2 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:19bf1395-2234-4a29-b49334f8e48de83a:2 731721
+SET rand:string:26707629-00fa-49e2-a396851a0cc93c7b:92 "random string value value"
+EXPIRE rand:string:26707629-00fa-49e2-a396851a0cc93c7b:92 348511
+SET rand:string:bd48b7d0-d409-46dc-856ff2e99c1a960a:91 "random string value value"
+EXPIRE rand:string:bd48b7d0-d409-46dc-856ff2e99c1a960a:91 987832
+SET rand:string:da36bd5a-4d8d-4518-8501705363df9963:31 "random string value value"
+EXPIRE rand:string:da36bd5a-4d8d-4518-8501705363df9963:31 855870
+SADD rand:set:e040b13f-2e2a-40d0-be64779af8ceb315:25 foo bar baz bob boop
+EXPIRE rand:set:e040b13f-2e2a-40d0-be64779af8ceb315:25 407074
+SET rand:string:ceb4dd80-1936-4e45-940578068171a1a8:14 "random string value value"
+EXPIRE rand:string:ceb4dd80-1936-4e45-940578068171a1a8:14 83105
+SET rand:string:4f11b5a6-6c16-4d75-8d5c5c9bc2dfc411:39 "random string value value"
+EXPIRE rand:string:4f11b5a6-6c16-4d75-8d5c5c9bc2dfc411:39 517103
+RPUSH rand:list:4ec5bec7-fa01-4ad4-afe66da613f12f4e:83 what the heck is that
+SADD rand:set:38fa54bb-debc-4933-a676bdada11b94e9:73 foo bar baz bob boop
+EXPIRE rand:set:38fa54bb-debc-4933-a676bdada11b94e9:73 615536
+HMSET rand:hash:08964409-c3c7-45c4-856ff4951fd62eba:26 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:08964409-c3c7-45c4-856ff4951fd62eba:26 257026
+RPUSH rand:list:19502493-61fa-48fc-93c4adb9fc0adbf7:89 what the heck is that
+SET rand:string:a6b00c0e-85f7-4566-a74ad70a6298d8e1:11 "random string value value"
+EXPIRE rand:string:a6b00c0e-85f7-4566-a74ad70a6298d8e1:11 196840
+SADD rand:set:9c72645d-93a1-42dc-badafbb24c245859:6 foo bar baz bob boop
+EXPIRE rand:set:9c72645d-93a1-42dc-badafbb24c245859:6 486367
+ZADD rand:zset:3df2b435-96b3-4beb-bbf4a06512bc7a46:56 1 foo 2 bar 2 baz 2 bob 2 boop
+ZADD rand:zset:adb80452-e723-4503-9c483b7ac966c2e1:95 1 foo 2 bar 2 baz 2 bob 2 boop
+HMSET rand:hash:993d3bd9-b446-42f4-a319f24a2d0a1dfb:56 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:993d3bd9-b446-42f4-a319f24a2d0a1dfb:56 889935
+SET rand:string:40392b74-e0d6-480f-96847884a8dbbf9a:28 "random string value value"
+EXPIRE rand:string:40392b74-e0d6-480f-96847884a8dbbf9a:28 455483
+HMSET rand:hash:990ac91b-5627-4a29-ac1cda7d64d670ef:16 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:990ac91b-5627-4a29-ac1cda7d64d670ef:16 878866
+ZADD rand:zset:237ad470-995d-404e-a6cf8388ee86efd5:44 1 foo 2 bar 2 baz 2 bob 2 boop
+SADD rand:set:ddc0667d-ba4a-4d75-8163810fd97ebf55:24 foo bar baz bob boop
+EXPIRE rand:set:ddc0667d-ba4a-4d75-8163810fd97ebf55:24 109083
+SADD rand:set:2262052c-5406-4644-b087000015073e29:89 foo bar baz bob boop
+EXPIRE rand:set:2262052c-5406-4644-b087000015073e29:89 744656
+RPUSH rand:list:39ba246e-860b-470d-9c2dbb222e0fbe3b:85 what the heck is that
+RPUSH rand:list:041514c6-8e78-46e0-b71d2723a31ad48e:0 what the heck is that
+HMSET rand:hash:4ac8c9e6-5d58-4f46-adfa2b119e9fd38f:60 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:4ac8c9e6-5d58-4f46-adfa2b119e9fd38f:60 293987
+SET rand:string:269040dc-5333-44ed-b44003d95b1f70e5:4 "random string value value"
+EXPIRE rand:string:269040dc-5333-44ed-b44003d95b1f70e5:4 811020
+RPUSH rand:list:89f1e414-0c05-4e54-b580eca496cd40a5:97 what the heck is that
+SADD rand:set:15fa0259-ca21-4f45-af17877d7cfa90e5:15 foo bar baz bob boop
+EXPIRE rand:set:15fa0259-ca21-4f45-af17877d7cfa90e5:15 322604
+RPUSH rand:list:0888f874-b7d6-4cc5-b0022397dfc2a6d2:46 what the heck is that
+HMSET rand:hash:c906dbc1-47b3-48c1-b473e5ba7b808669:8 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:c906dbc1-47b3-48c1-b473e5ba7b808669:8 208539
+RPUSH rand:list:883640e0-3a12-4184-b2a7de04491ec87a:92 what the heck is that
+RPUSH rand:list:c9ee7eea-3e89-4690-9441a540f6ab1525:9 what the heck is that
+RPUSH rand:list:d399080a-2972-4e5a-b711df9c6bfccb78:44 what the heck is that
+ZADD rand:zset:8c4870ea-254b-4370-83aecb4d89a99abe:57 1 foo 2 bar 2 baz 2 bob 2 boop
+SET rand:string:6a787c4c-498d-495a-bba1782756cabebc:85 "random string value value"
+EXPIRE rand:string:6a787c4c-498d-495a-bba1782756cabebc:85 264598
+SADD rand:set:52e16bf2-bd90-4fd3-8d049be4d2921153:25 foo bar baz bob boop
+EXPIRE rand:set:52e16bf2-bd90-4fd3-8d049be4d2921153:25 825760
+SET rand:string:104184c4-df66-4ee0-9887fe508cb96215:100 "random string value value"
+EXPIRE rand:string:104184c4-df66-4ee0-9887fe508cb96215:100 88982
+RPUSH rand:list:165fe92a-c156-4fd5-b6c5085f09dc1b23:36 what the heck is that
+ZADD rand:zset:3d4a04c1-6026-4cd5-ab60b8468feeaec4:22 1 foo 2 bar 2 baz 2 bob 2 boop
+SET rand:string:c27c768a-2999-48b5-9708bcb2c0323a89:6 "random string value value"
+EXPIRE rand:string:c27c768a-2999-48b5-9708bcb2c0323a89:6 258648
+SET rand:string:defe3e14-cac2-4da3-a3661833c9cdb31a:89 "random string value value"
+EXPIRE rand:string:defe3e14-cac2-4da3-a3661833c9cdb31a:89 290461
+ZADD rand:zset:9bed8cc7-620c-4fd0-8cf727ee07901126:97 1 foo 2 bar 2 baz 2 bob 2 boop
+HMSET rand:hash:65e7e60d-21a6-45ec-bd36ec42ba77b054:47 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:65e7e60d-21a6-45ec-bd36ec42ba77b054:47 743394
+RPUSH rand:list:17c4b9c2-7e98-423d-a7768e73b6606bbb:57 what the heck is that
+ZADD rand:zset:3e3c7fb3-3cf5-4e74-81a7368793dbddf5:10 1 foo 2 bar 2 baz 2 bob 2 boop
+ZADD rand:zset:43c94e70-ee6d-4bd2-aeacc986bc9f84aa:33 1 foo 2 bar 2 baz 2 bob 2 boop
+SADD rand:set:64f8dd2c-08ed-43ae-9fecc287104a4f38:86 foo bar baz bob boop
+EXPIRE rand:set:64f8dd2c-08ed-43ae-9fecc287104a4f38:86 992873
+ZADD rand:zset:1d010e0e-a92e-495c-a942f3d84cc2d104:75 1 foo 2 bar 2 baz 2 bob 2 boop
+HMSET rand:hash:0482b7d3-3964-4252-ae115977b47ccf8b:66 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:0482b7d3-3964-4252-ae115977b47ccf8b:66 536196
+ZADD rand:zset:6ff8fccb-7b59-4232-8684b5c3f089244f:39 1 foo 2 bar 2 baz 2 bob 2 boop
+RPUSH rand:list:488f727c-42d5-4e1c-a3e95a78a68a61dd:61 what the heck is that
+ZADD rand:zset:2a734f35-236e-46e1-a45f1db985562566:43 1 foo 2 bar 2 baz 2 bob 2 boop
+RPUSH rand:list:dbed5fb2-b200-446b-94e1b6298303c1df:13 what the heck is that
+RPUSH rand:list:6c449123-cfa9-4267-bc039b847a579618:67 what the heck is that
+ZADD rand:zset:ededdc62-ebc5-45f0-b46062c37eb6712e:91 1 foo 2 bar 2 baz 2 bob 2 boop
+SADD rand:set:10609c7a-bca6-405a-8159e0daf4d4cf05:32 foo bar baz bob boop
+EXPIRE rand:set:10609c7a-bca6-405a-8159e0daf4d4cf05:32 215966
+SET rand:string:466f6c9a-66ab-43e7-9be86af1587830fa:64 "random string value value"
+EXPIRE rand:string:466f6c9a-66ab-43e7-9be86af1587830fa:64 467601
+RPUSH rand:list:f637d5f4-a619-4f45-92af3f55c2c38a3d:86 what the heck is that
+SADD rand:set:f8e38751-e40a-424a-b54372f3fbef7b01:82 foo bar baz bob boop
+EXPIRE rand:set:f8e38751-e40a-424a-b54372f3fbef7b01:82 757565
+SADD rand:set:17f7cb73-aaa8-4857-9b7f3eead55765f7:39 foo bar baz bob boop
+EXPIRE rand:set:17f7cb73-aaa8-4857-9b7f3eead55765f7:39 126695
+HMSET rand:hash:8859c686-5d57-4e54-a814551a9c87483c:38 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:8859c686-5d57-4e54-a814551a9c87483c:38 175772
+HMSET rand:hash:6ed552cd-6b11-4fa7-a9c27a032a12eb66:1 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:6ed552cd-6b11-4fa7-a9c27a032a12eb66:1 902465
+SET rand:string:f791ab4d-c45e-4096-aa389729190c034c:9 "random string value value"
+EXPIRE rand:string:f791ab4d-c45e-4096-aa389729190c034c:9 127711
+SET rand:string:55c7a399-89a0-4380-97d53a5abb49fc7e:4 "random string value value"
+EXPIRE rand:string:55c7a399-89a0-4380-97d53a5abb49fc7e:4 935028
+ZADD rand:zset:e11d82cd-1952-4690-bba906dd8d969f04:41 1 foo 2 bar 2 baz 2 bob 2 boop
+HMSET rand:hash:4278c367-9853-4026-81a3fac49df0b8e7:95 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:4278c367-9853-4026-81a3fac49df0b8e7:95 261193
+SADD rand:set:11ec14c8-9fbb-4d68-a55a1b51ad6c53b2:8 foo bar baz bob boop
+EXPIRE rand:set:11ec14c8-9fbb-4d68-a55a1b51ad6c53b2:8 779112
+SADD rand:set:92e7a04f-b982-4e03-b3cf4efa02debde6:26 foo bar baz bob boop
+EXPIRE rand:set:92e7a04f-b982-4e03-b3cf4efa02debde6:26 798114
+HMSET rand:hash:20fc733a-15d9-4624-802d40d669dc2d5a:68 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:20fc733a-15d9-4624-802d40d669dc2d5a:68 491377
+RPUSH rand:list:d5112485-e6b0-449f-b07c7ed9ec3e420e:95 what the heck is that
+RPUSH rand:list:592dd2a8-8e06-4e85-b9cb9471b6a16333:59 what the heck is that
+SET rand:string:1ef9168b-5bed-42c0-97fa99e7812199be:99 "random string value value"
+EXPIRE rand:string:1ef9168b-5bed-42c0-97fa99e7812199be:99 113174
+SET rand:string:b988947c-a5c2-4abc-af12c5e802886d5c:42 "random string value value"
+EXPIRE rand:string:b988947c-a5c2-4abc-af12c5e802886d5c:42 691724
+HMSET rand:hash:9028e10c-fa07-4ec8-943b3402884c82f4:14 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:9028e10c-fa07-4ec8-943b3402884c82f4:14 626946
+RPUSH rand:list:3b65e795-ec7a-4788-a760ddb31951e288:92 what the heck is that
+HMSET rand:hash:c5ebae30-cdb4-4ca0-b67600dd0b963e4e:92 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:c5ebae30-cdb4-4ca0-b67600dd0b963e4e:92 421516
+SET rand:string:df8395c7-952e-4dfa-a6d9c75374331a33:70 "random string value value"
+EXPIRE rand:string:df8395c7-952e-4dfa-a6d9c75374331a33:70 933733
+SADD rand:set:8a60ecb2-cc31-4c40-92dd5e9a4b6666e2:58 foo bar baz bob boop
+EXPIRE rand:set:8a60ecb2-cc31-4c40-92dd5e9a4b6666e2:58 187610
+SET rand:string:ace85086-c8cd-424f-898d9fa3126fed1c:30 "random string value value"
+EXPIRE rand:string:ace85086-c8cd-424f-898d9fa3126fed1c:30 199636
+HMSET rand:hash:dae0148c-4acb-4d24-84a01aa6d4f60406:87 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:dae0148c-4acb-4d24-84a01aa6d4f60406:87 797446
+SADD rand:set:8a58a25b-22d4-4753-962fc2cd638e9471:88 foo bar baz bob boop
+EXPIRE rand:set:8a58a25b-22d4-4753-962fc2cd638e9471:88 745591
+SADD rand:set:dbd37aa8-712f-456c-8a3ace44d4aa0fb9:65 foo bar baz bob boop
+EXPIRE rand:set:dbd37aa8-712f-456c-8a3ace44d4aa0fb9:65 759752
+SADD rand:set:ca40712a-1387-4842-bd07fb4aa18ad7b5:66 foo bar baz bob boop
+EXPIRE rand:set:ca40712a-1387-4842-bd07fb4aa18ad7b5:66 913934
+SADD rand:set:0b82f086-8f84-4292-bd349f44c110fa71:62 foo bar baz bob boop
+EXPIRE rand:set:0b82f086-8f84-4292-bd349f44c110fa71:62 610666
+SADD rand:set:91665df6-b1e6-49c0-bcdb07a5b73cc200:72 foo bar baz bob boop
+EXPIRE rand:set:91665df6-b1e6-49c0-bcdb07a5b73cc200:72 222907
+SADD rand:set:9069050d-4be2-493f-be7d83231fa050d5:87 foo bar baz bob boop
+EXPIRE rand:set:9069050d-4be2-493f-be7d83231fa050d5:87 77762
+SET rand:string:68007a47-84a9-483a-8a21db7ea97c5d5e:29 "random string value value"
+EXPIRE rand:string:68007a47-84a9-483a-8a21db7ea97c5d5e:29 410042
+SET rand:string:f6cc3827-b399-47da-be02420e9bb8b6be:44 "random string value value"
+EXPIRE rand:string:f6cc3827-b399-47da-be02420e9bb8b6be:44 306698
+HMSET rand:hash:253b8090-f664-4d75-a396d85a7c095500:62 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:253b8090-f664-4d75-a396d85a7c095500:62 35446
+SET rand:string:e78f5938-8c79-4d52-9016f47524485ca4:47 "random string value value"
+EXPIRE rand:string:e78f5938-8c79-4d52-9016f47524485ca4:47 992870
+SADD rand:set:c4033ee2-77f4-4ea7-89d963f655ff2596:24 foo bar baz bob boop
+EXPIRE rand:set:c4033ee2-77f4-4ea7-89d963f655ff2596:24 292849
+SADD rand:set:cba6df02-b766-4c77-9b32b6121550ce84:25 foo bar baz bob boop
+EXPIRE rand:set:cba6df02-b766-4c77-9b32b6121550ce84:25 71882
+SET rand:string:31c3c4dc-9073-4dff-abfc963465ce10e6:97 "random string value value"
+EXPIRE rand:string:31c3c4dc-9073-4dff-abfc963465ce10e6:97 128957
+SET rand:string:e75c0b04-492d-49fc-b15c0a6c01b1fb57:58 "random string value value"
+EXPIRE rand:string:e75c0b04-492d-49fc-b15c0a6c01b1fb57:58 524351
+HMSET rand:hash:00df5b4a-a81b-4997-8ff4d6eaafca1dfa:96 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:00df5b4a-a81b-4997-8ff4d6eaafca1dfa:96 967411
+SADD rand:set:97d5dc8d-46e9-4797-83c42e47c549fc69:19 foo bar baz bob boop
+EXPIRE rand:set:97d5dc8d-46e9-4797-83c42e47c549fc69:19 925628
+ZADD rand:zset:e5ae6648-6455-48f8-a619dc7dda4a79e7:74 1 foo 2 bar 2 baz 2 bob 2 boop
+HMSET rand:hash:f9e02fb9-d884-4910-8c1274f724d02b32:23 a 1 b 2 c 3 d 4
+EXPIRE rand:hash:f9e02fb9-d884-4910-8c1274f724d02b32:23 897881

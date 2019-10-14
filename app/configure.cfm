@@ -20,12 +20,12 @@
 		<meta charset="utf-8" />
 
 		<title>
-			Configure Redis Scanner
+			Configure Redis Key Scanner
 		</title>
 
 		<script type="text/javascript">
 
-			// Since we're dealing with old-school frameset, let's make sure that the
+			// Since we're dealing with an old-school frameset, let's make sure that the
 			// Configure page never shows up in one of the frames. Redirect at the top-
 			// level if this page is framed.
 			if ( window.self !== window.top ) {
@@ -41,7 +41,7 @@
 	<body class="p-configure">
 
 		<h1 class="title">
-			Configure Redis Scanner
+			Configure Redis Key Scanner
 		</h1>
 
 		<form method="post" action="#cgi.script_name#" class="form">
