@@ -6,9 +6,9 @@ by [Ben Nadel][bennadel]
 Partly as a learning experiment, partly because I have an actual need to inspect a Redis database, I built a super light-weight Redis key scanner using [Lucee CFML][lucee] 5.2.8.50 and [Jedis][jedis] 2.9.3. All it does is provide a GUI (Graphical User Interface) for iterating the keys in the configured Redis database; and then, viewing those keys along with their Type, TTL (Time To Live), and mapped Value.
 
 <p align="center">
-	<a href="./README-screenshot.png?raw=true" target="_blank"
+	<a href="./README-screenshot.gif?raw=true" target="_blank"
 		><img
-			src="./README-screenshot.png?raw=true"
+			src="./README-screenshot.gif?raw=true"
 			title="Screenshot of Redis Key Scanner running via CommandBox."
 			style="width: 100% ;"
 	/></a>
