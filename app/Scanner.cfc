@@ -203,7 +203,7 @@ component
 
 		if ( ttlInHours < 24 ) {
 
-			return( numberFormat( ttlInMinutes, "0.0" ) & " hours" );
+			return( numberFormat( ttlInHours, "0.0" ) & " hours" );
 
 		}
 
