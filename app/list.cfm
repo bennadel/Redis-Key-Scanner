@@ -51,7 +51,7 @@
 		<cfelse>
 
 			<p>
-				<em>No keys found at this scan offset.</em>
+				<em>No keys found at this scan offset ( #encodeForHtml( url.scanCursor )# ).</em>
 			</p>
 
 		</cfif>
