@@ -149,6 +149,7 @@ component
 		);
 
 		var results = {
+			previousCursor: scanCursor,
 			cursor: scanResults.getCursor(),
 			keys: scanResults.getResult()
 		};

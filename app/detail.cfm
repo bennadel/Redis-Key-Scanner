@@ -19,7 +19,7 @@
 	</head>
 	<body class="p-detail">
 
-		<form method="get" action="#cgi.script_name#" class="form">
+		<form method="get" action="#cgi.script_name#" target="detail" class="form">
 
 			<label for="key-inpu" class="form__title">
 				Key:

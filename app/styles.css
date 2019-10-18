@@ -96,6 +96,10 @@ button {
 	font-size: 22px ;
 }
 
+.p-list .pagination--none a {
+	text-decoration: line-through ;
+}
+
 .p-list .keys {
 	line-height: 1.5em ;
 	white-space: nowrap ;
@@ -103,6 +107,15 @@ button {
 
 .p-list .keys__link:visited {
 	color: #999999 ;
+}
+
+.p-list .scan-count {
+	color: #999999 ;
+	font-size: 16px ;
+}
+
+.p-list .scan-count__value {
+	color: inherit ;
 }
 
 .p-list .reconfigure {

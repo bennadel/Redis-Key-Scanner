@@ -3,11 +3,13 @@
 	param name="url.scanCursor" type="numeric" default=0;
 	param name="url.scanPatternInclude" type="string" default="";
 	param name="url.scanPatternExclude" type="string" default="";
+	param name="url.scanCount" type="numeric" default=100;
 
 	results = application.scanner.scan(
 		url.scanCursor,
 		url.scanPatternInclude,
-		url.scanPatternExclude
+		url.scanPatternExclude,
+		url.scanCount
 	);
 
 </cfscript>
@@ -21,7 +23,13 @@
 	</head>
 	<body class="p-list">
 
-		<form method="get" action="#cgi.script_name#" class="form">
+		<form method="get" action="#cgi.script_name#" target="list" class="form">
+
+			<input
+				type="hidden"
+				name="scanCount"
+				value="#encodeForHtmlAttribute( url.scanCount )#"
+			/>
 
 			<div class="form__title">
 				Patterns (RegEx):
@@ -65,8 +73,8 @@
 
 		</form>
 
-		<p class="pagination">
-			<a href="#cgi.script_name#?scanPatternInclude=#encodeForUrl( url.scanPatternInclude )#&scanPatternExclude=#encodeForUrl( url.scanPatternExclude )#&scanCursor=#encodeForUrl( results.cursor )#" target="list">Scan Next Page</a> &raquo;
+		<p class="pagination <cfif ! results.cursor>pagination--none</cfif>">
+			<a href="#cgi.script_name#?scanPatternInclude=#encodeForUrl( url.scanPatternInclude )#&scanPatternExclude=#encodeForUrl( url.scanPatternExclude )#&scanCursor=#encodeForUrl( results.cursor )#&scanCount=#encodeForUrl( url.scanCount )#" target="list">Scan Next Page</a> &raquo;
 		</p>
 
 		<cfif results.keys.len()>
@@ -89,8 +97,18 @@
 
 		</cfif>
 
-		<p class="pagination">
-			<a href="#cgi.script_name#?scanPatternInclude=#encodeForUrl( url.scanPatternInclude )#&scanPatternExclude=#encodeForUrl( url.scanPatternExclude )#&scanCursor=#encodeForUrl( results.cursor )#" target="list">Scan Next Page</a> &raquo;
+		<p class="pagination <cfif ! results.cursor>pagination--none</cfif>">
+			<a href="#cgi.script_name#?scanPatternInclude=#encodeForUrl( url.scanPatternInclude )#&scanPatternExclude=#encodeForUrl( url.scanPatternExclude )#&scanCursor=#encodeForUrl( results.cursor )#&scanCount=#encodeForUrl( url.scanCount )#" target="list">Scan Next Page</a> &raquo;
+		</p>
+
+		<p class="scan-count">
+			<span class="scan-count__label">Scan Count:</span>
+
+			<cfloop index="newCount" list="10,100,500,1000,5000,10000">
+
+				<a href="#cgi.script_name#?scanPatternInclude=#encodeForUrl( url.scanPatternInclude )#&scanPatternExclude=#encodeForUrl( url.scanPatternExclude )#&scanCursor=#encodeForUrl( results.previousCursor )#&scanCount=#encodeForUrl( newCount )#" target="list" class="scan-count__value">#numberFormat( newCount )#</a>
+
+			</cfloop>
 		</p>
 
 		<p class="reconfigure">
