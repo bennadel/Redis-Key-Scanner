@@ -26,6 +26,10 @@ component
 	*/
 	public boolean function onApplicationStart() {
 
+		// Let's store a new cache-bust value when the application boots-up. This can be
+		// used to cache-bust URLs for static assets (such as CSS files).
+		application.cacheBust = getTickCount();
+
 		var javaLoaderFactory = new JavaLoaderFactory.JavaLoaderFactory();
 
 		application.scanner = new Scanner(

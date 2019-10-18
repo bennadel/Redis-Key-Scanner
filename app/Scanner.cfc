@@ -116,17 +116,19 @@ component
 	/**
 	* I scan over the Redis keys, using the given cursor and pattern.
 	* 
-	* NOTE: The pattern is applied to the keys AFTER they have been scanned. As such,
-	* it's possible to use a pattern that returns zero results prior to the end of a
-	* full iteration of the Redis database.
+	* NOTE: The Include / Exclude patterns are applied to the keys AFTER they have been
+	* scanned AND RETURNED to the server. As such, it's possible to use patterns that
+	* result in zero results prior to the end of a full iteration of the Redis database.
 	* 
 	* @scanCursor I am the cursor performing the iteration.
-	* @scanPattern I am the post-scan filter to apply to the result-set.
+	* @scanPatternInclude I am the post-scan include-RegEx to apply to the result-set.
+	* @scanPatternExclude I am the post-scan exclude-RegEx to apply to the result-set.
 	* @scanCount I am the number of keys to scan in one operation.
 	*/
 	public struct function scan(
 		required numeric scanCursor,
-		required string scanPattern,
+		required string scanPatternInclude,
+		required string scanPatternExclude,
 		numeric scanCount = 100
 		) {
 
@@ -135,11 +137,10 @@ component
 		var scanParams = loader
 			.create( "redis.clients.jedis.ScanParams" )
 			.init()
-			.match( scanPattern )
 			.count( scanCount )
 		;
 
-		var results = withRedis(
+		var scanResults = withRedis(
 			( redis ) => {
 
 				return( redis.scan( scanCursor, scanParams ) );
@@ -147,10 +148,40 @@ component
 			}
 		);
 
-		return({
-			cursor: results.getCursor(),
-			keys: results.getResult()
-		});
+		var results = {
+			cursor: scanResults.getCursor(),
+			keys: scanResults.getResult()
+		};
+
+		// If we have an include RegEx pattern, limit the results to those keys that
+		// MATCH the given pattern.
+		if ( scanPatternInclude.len() ) {
+
+			results.keys = results.keys.filter(
+				( key ) => {
+
+					return( key.reFindNoCase( scanPatternInclude ) );
+
+				}
+			);
+
+		}
+
+		// If we have an exclude RegEx pattern, limit the results to those keys that
+		// DO NOT MATCH the given pattern.
+		if ( scanPatternExclude.len() ) {
+
+			results.keys = results.keys.filter(
+				( key ) => {
+
+					return( ! key.reFindNoCase( scanPatternExclude ) );
+
+				}
+			);
+
+		}
+
+		return( results );
 
 	}
 

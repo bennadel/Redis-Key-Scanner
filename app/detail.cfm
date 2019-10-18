@@ -15,17 +15,35 @@
 	<html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="stylesheet" type="text/css" href="./styles.css" />
+		<link rel="stylesheet" type="text/css" href="./styles.css?cacheBust=#application.cacheBust#" />
 	</head>
 	<body class="p-detail">
 
 		<form method="get" action="#cgi.script_name#" class="form">
 
-			<label for="key" class="form__label">Key:</label>
-			<input id="key" type="text" name="key" value="#encodeForHtmlAttribute( url.key )#" class="form__input" />
-			<button type="submit" class="form__button">
-				View
-			</button>
+			<label for="key-inpu" class="form__title">
+				Key:
+			</label>
+
+			<div class="form__controls">
+
+				<div class="form__control">
+					<input
+						id="key-inpu"
+						type="text"
+						name="key"
+						value="#encodeForHtmlAttribute( url.key )#"
+						class="form__input"
+					/>
+				</div>
+
+				<div class="form__control form__control--action">
+					<button type="submit" class="form__button">
+						View
+					</button>
+				</div>
+
+			</div>
 
 		</form>
 

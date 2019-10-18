@@ -18,7 +18,7 @@
 			Redis Key Scanner
 		</title>
 
-		<link rel="stylesheet" type="text/css" href="./styles.css" />
+		<link rel="stylesheet" type="text/css" href="./styles.css?cacheBust=#application.cacheBust#" />
 
 		<script type="text/javascript">
 

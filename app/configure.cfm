@@ -36,7 +36,7 @@
 
 		</script>
 
-		<link rel="stylesheet" type="text/css" href="./styles.css" />
+		<link rel="stylesheet" type="text/css" href="./styles.css?cacheBust=#application.cacheBust#" />
 	</head>
 	<body class="p-configure">
 
