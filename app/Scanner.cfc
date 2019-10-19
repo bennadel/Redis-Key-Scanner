@@ -154,8 +154,8 @@ component
 			keys: scanResults.getResult()
 		};
 
-		// If we have an include RegEx pattern, limit the results to those keys that
-		// MATCH the given pattern.
+		// If we have an include RegEx pattern, limit the results to INCLUDE those keys
+		// that MATCH the given pattern.
 		if ( scanPatternInclude.len() ) {
 
 			results.keys = results.keys.filter(
@@ -168,8 +168,8 @@ component
 
 		}
 
-		// If we have an exclude RegEx pattern, limit the results to those keys that
-		// DO NOT MATCH the given pattern.
+		// If we have an exclude RegEx pattern, limit the results to INCLUDE those keys
+		// that DO NOT MATCH the given pattern.
 		if ( scanPatternExclude.len() ) {
 
 			results.keys = results.keys.filter(
